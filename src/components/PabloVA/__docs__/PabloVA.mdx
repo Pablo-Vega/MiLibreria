@@ -1,0 +1,56 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as CustomPabloVA from "./PabloVA.stories.tsx";
+
+<Meta of={CustomPabloVA} title="CustomPabloVA" />
+
+# CustomPabloVA
+
+Componente de botón con diferentes especializaciones.
+
+#### Example
+
+<Canvas of={CustomPabloVA.Primary} />
+
+## Usage
+
+```ts
+import {CustomPabloVA} from 'milibreria';
+
+function Example(){
+    return (
+        <CustomPabloVA
+            text: "PabloVA primary",
+            txtcolor: 'black',
+            bgcolor: 'red',
+            disabled: false,
+            size: "small",
+            onClick: () => alert("PabloVA Primary"),
+        />
+    );
+};
+
+export default Example;
+```
+
+#### Example
+
+<Canvas of={CustomPabloVA.Secondary} />
+
+## Usage
+
+```ts
+import {CustomPabloVA} from 'milibreria';
+
+function Example(){
+    return (
+        <CustomPabloVA
+            text: "PabloVA secondary",
+            txtcolor: 'white',
+            bgcolor: 'pink',
+            disabled: false,
+            size: "small",
+            onClick: () => alert("PabloVA Secondary"),
+        />
+    );
+};
